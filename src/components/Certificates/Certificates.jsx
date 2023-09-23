@@ -1,0 +1,100 @@
+import { React, useState } from 'react';
+import './Certificates.css';
+import freeCodeCampWebDesignCertificate from '../../assets/freecodecamp-web-design-certificate.png';
+import jsSololearnCertificate from '../../assets/JSBySololearn.png';
+import certificateFromCursa from '../../assets/certificateFromCursa.png';
+import certificateFromWayUp from '../../assets/WayUp_Certificate_en.png';
+import { FaTimes } from 'react-icons/fa';
+import 'animate.css/animate.min.css';
+import ScrollAnimation from 'react-animate-on-scroll';
+
+const Certificates = () => {
+  const [openCertificateModal, setOpenCertificateModal] = useState(false);
+
+  const handleOpenCertificate = (imageAction) => {
+    setOpenCertificateModal(true);
+    document.body.style.overflow = 'hidden';
+    const modalImg = document.querySelector('.certificate-modal img');
+    modalImg.src = `${
+      imageAction == 'first'
+        ? freeCodeCampWebDesignCertificate
+        : imageAction == 'second'
+        ? jsSololearnCertificate
+        : imageAction == 'third'
+        ? certificateFromCursa
+        : certificateFromWayUp
+    }`;
+  };
+
+  return (
+    <div id='certificates'>
+      <div
+        className={`overlay ${openCertificateModal == true ? '' : 'hide'}`}
+        onClick={() => (
+          setOpenCertificateModal(false),
+          (document.body.style.overflow = 'auto')
+        )}
+      >
+        <div
+          className={`certificate-modal`}
+          onClick={(evt) => evt.stopPropagation()}
+        >
+          <FaTimes
+            onClick={() => (
+              setOpenCertificateModal(false),
+              (document.body.style.overflow = 'auto')
+            )}
+          />
+          <img
+            src={freeCodeCampWebDesignCertificate}
+            alt={freeCodeCampWebDesignCertificate}
+          />
+        </div>
+      </div>
+      <ScrollAnimation animateIn='animate__fadeIn'>
+        <p className='certificate-top-text'>You can see my</p>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn='animate__fadeInUp'>
+        <h1 className='certificates-title'>Certificates</h1>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn='animate__fadeOut'>
+        <div className='certificates-content'>
+          <div
+            className='freecodecamp-certificate certificate'
+            data-image='first'
+            onClick={(evt) => handleOpenCertificate(evt.target.dataset.image)}
+          >
+            <img
+              src={freeCodeCampWebDesignCertificate}
+              alt={freeCodeCampWebDesignCertificate}
+            />
+          </div>
+
+          <div
+            className='js-sololearn-certificate certificate'
+            data-image='second'
+            onClick={(evt) => handleOpenCertificate(evt.target.dataset.image)}
+          >
+            <img src={jsSololearnCertificate} alt={jsSololearnCertificate} />
+          </div>
+          <div
+            className='cursa-certificate certificate'
+            data-image='third'
+            onClick={(evt) => handleOpenCertificate(evt.target.dataset.image)}
+          >
+            <img src={certificateFromCursa} alt={certificateFromCursa} />
+          </div>
+          <div
+            className='wayup-certificate certificate'
+            data-image='fourth'
+            onClick={(evt) => handleOpenCertificate(evt.target.dataset.image)}
+          >
+            <img src={certificateFromWayUp} alt={certificateFromWayUp} />
+          </div>
+        </div>
+      </ScrollAnimation>
+    </div>
+  );
+};
+
+export default Certificates;
