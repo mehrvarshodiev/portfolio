@@ -38,7 +38,7 @@ const About = () => {
 
       <div className='row'>
         <div className='about-img'>
-          <ScrollAnimation animateIn='animate__flipInY'>
+          <ScrollAnimation animateIn='animate__slideInUp'>
             <img src={AboutMePic} alt={AboutMePic} />
           </ScrollAnimation>
         </div>
