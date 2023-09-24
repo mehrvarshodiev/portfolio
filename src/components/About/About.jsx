@@ -83,7 +83,7 @@ const About = () => {
             >
               <p>
                 My name is <strong>Mehrvar</strong>. I was born in 2002, so I'm
-                twenty one years old. I am a <em>frontend developer</em> from
+                twenty one years old. I am a <u>frontend developer</u> from
                 Tajikistan. I am a student and have learned various technologies
                 in the field of web development. In my free time I open my
                 laptop and write some code and go to the gym. I am looking for a
