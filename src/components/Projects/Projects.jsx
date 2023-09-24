@@ -25,13 +25,17 @@ const Projects = () => {
               </ScrollAnimation>
               <a
                 className='github-code'
-                href='https://github.com'
+                href='https://github.com/mehrvarshodiev/quizapp'
                 target='_blank'
                 title='github code'
               >
                 Github
               </a>
-              <a href='#' className='live-demo' target='_blank'>
+              <a
+                href='https://mehrvarshodiev.github.io/quizapp/'
+                className='live-demo'
+                target='_blank'
+              >
                 Live Demo
               </a>
             </figcaption>
@@ -46,14 +50,14 @@ const Projects = () => {
               </ScrollAnimation>
               <a
                 className='github-code'
-                href='https://mehrvarshodiev.github.io/filter-products-sample/'
+                href='https://github.com/mehrvarshodiev/filter-products-sample/'
                 target='_blank'
                 title='github code'
               >
                 Github
               </a>
               <a
-                href='https://shorturl.at/cmDJT'
+                href='https://mehrvarshodiev.github.io/filter-products-sample/'
                 className='live-demo'
                 target='_blank'
               >
@@ -72,13 +76,17 @@ const Projects = () => {
               </ScrollAnimation>
               <a
                 className='github-code'
-                href='https://github.com'
+                href='https://github.com/mehrvarshodiev/noteapp'
                 target='_blank'
                 title='github code'
               >
                 Github
               </a>
-              <a href='#' className='live-demo' target='_blank'>
+              <a
+                href='https://mehrvarshodiev.github.io/noteapp/'
+                className='live-demo'
+                target='_blank'
+              >
                 Live Demo
               </a>
             </figcaption>
