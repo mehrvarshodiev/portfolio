@@ -18,10 +18,10 @@ const Projects = () => {
       <div className='carts'>
         <ScrollAnimation animateIn='animate__zoomInLeft'>
           <figure className='cart'>
-            <img src={noteApp} alt={noteApp} />
+            <img src={quizApp} alt={quizApp} />
             <figcaption>
               <ScrollAnimation animateIn='animate__shakeY'>
-                <h3>Note App</h3>
+                <h3>Quiz App</h3>
               </ScrollAnimation>
               <a
                 className='github-code'
@@ -69,10 +69,10 @@ const Projects = () => {
 
         <ScrollAnimation animateIn='animate__zoomInRight'>
           <figure className='cart'>
-            <img src={quizApp} alt={quizApp} />
+            <img src={noteApp} alt={noteApp} />
             <figcaption>
               <ScrollAnimation animateIn='animate__fadeOutUp'>
-                <h3>Quiz App</h3>
+                <h3>Note App</h3>
               </ScrollAnimation>
               <a
                 className='github-code'
