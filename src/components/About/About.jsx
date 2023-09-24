@@ -20,6 +20,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import AboutMePic from '../../assets/about-me.jpg';
 
 const About = () => {
   let [infoTab, setInfoTab] = useState(true);
@@ -37,7 +38,9 @@ const About = () => {
 
       <div className='row'>
         <div className='about-img'>
-          <FaUserGraduate />
+          <ScrollAnimation animateIn='animate__flipInY'>
+            <img src={AboutMePic} alt={AboutMePic} />
+          </ScrollAnimation>
         </div>
 
         <div className='tabs'>
