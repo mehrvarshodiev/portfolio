@@ -82,13 +82,13 @@ const About = () => {
               }`}
             >
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident dolor voluptate reprehenderit error quos voluptatem
-                dignissimos soluta veniam, sed non nam, aspernatur maiores
-                accusamus odit delectus voluptates architecto amet fuga. Quae
-                quisquam doloremque facere, ullam quaerat, nemo in neque itaque
-                veniam perspiciatis cupiditate illum similique eligendi amet
-                adipisci aspernatur!
+                My name is <strong>Mehrvar</strong>. I was born in 2002, so I'm
+                twenty one years old. I am a <em>frontend developer</em> from
+                Tajikistan. I am a student and have learned various technologies
+                in the field of web development. In my free time I open my
+                laptop and write some code and go to the gym. I am looking for a
+                job. If you have different projects in this area, you can add me
+                to your team.
               </p>
             </div>
 
