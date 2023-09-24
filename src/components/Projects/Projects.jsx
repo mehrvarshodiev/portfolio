@@ -46,7 +46,7 @@ const Projects = () => {
               </ScrollAnimation>
               <a
                 className='github-code'
-                href='https://shorturl.at/rBFHM'
+                href='https://mehrvarshodiev.github.io/filter-products-sample/'
                 target='_blank'
                 title='github code'
               >
