@@ -120,6 +120,11 @@ textarea:focus::placeholder {
   accent-color: #fff;
 }
 
+input.has-error {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
 .form-content button[type='submit'] {
   padding: 0.7rem 1.1rem;
   font-size: 1.3rem;

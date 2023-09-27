@@ -41,9 +41,36 @@ const Contacts = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
     const submitBtn = document.querySelector('button[type="submit"]');
+    const nameInput = document.querySelector('input[name="user_name"]');
+    const emailInput = document.querySelector('input[name="user_email"]');
+    const messageInput = document.querySelector('textarea[name="message"]');
 
-    if (nameValue == '' || emailValue == '' || messageValue == '') {
+    if (nameValue == '' && emailValue == '' && messageValue == '') {
+      nameInput.focus();
       setErrorTextValue('Please fill out all required fields!');
+      setTimeout(() => {
+        setErrorTextValue('');
+      }, 2000);
+      return;
+    }
+
+    if (nameValue == '') {
+      nameInput.focus();
+      setErrorTextValue('Please fill out name field!');
+      setTimeout(() => {
+        setErrorTextValue('');
+      }, 2000);
+      return;
+    } else if (emailValue == '') {
+      emailInput.focus();
+      setErrorTextValue('Please fill out email field!');
+      setTimeout(() => {
+        setErrorTextValue('');
+      }, 2000);
+      return;
+    } else if (messageValue == '') {
+      messageInput.focus();
+      setErrorTextValue('Please fill out message field!');
       setTimeout(() => {
         setErrorTextValue('');
       }, 2000);
