@@ -1,3 +1,3 @@
 # Portfolio Website
 
-## Click to [https://mehrvarshodiev.github.io/portfolio/] and see live demo
+## Click to <a href="https://mehrvarshodiev.github.io/portfolio/" target="_blank">Here</a> and see live demo of my portfolio
