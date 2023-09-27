@@ -29,7 +29,7 @@ const About = () => {
 
   return (
     <div id='about' className='about-page'>
-      <ScrollAnimation animateIn='animate__fadeInDown'>
+      <ScrollAnimation animateIn='animate__zoomIn'>
         <p className='about-top-text'>Get to know more</p>
       </ScrollAnimation>
       <ScrollAnimation animateIn='animate__fadeInUp'>

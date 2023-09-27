@@ -19,7 +19,13 @@ const MainContent = () => {
   };
 
   window.onscroll = () => {
-    let scrollTop = document.documentElement.scrollTop || window.pageYOffset;
+    let { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+
+    // Horizontal Scroll Indicator
+    const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
+    const horizontalScrollLine = document.querySelector('.horizontal_scroll');
+    horizontalScrollLine.style.width = `${scrolled}%`;
+
     const header = document.querySelector('.header');
     const arrowDown = document.querySelector('.arrow-down');
 
@@ -59,6 +65,7 @@ const MainContent = () => {
             : ''
         }`}
       >
+        <div className='horizontal_scroll'></div>
         <div className='logo'>
           <button
             onClick={() => (
