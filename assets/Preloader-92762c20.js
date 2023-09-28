@@ -1,1 +1,0 @@
-import{j as r}from"./index-11fa1eec.js";import{T as e}from"./Preloader-4acfaca3.js";const i=()=>r.jsx("div",{className:"preloader",children:r.jsx(e,{height:"120",width:"120",color:"red",wrapperStyle:{},wrapperClass:"",visible:!0,ariaLabel:"three-circles-rotating",outerCircleColor:"#287e82",innerCircleColor:"#83d6dc",middleCircleColor:"#ffffff"})});export{i as default};
