@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, lazy } from 'react';
 import './Projects.css';
 import noteApp from '../../assets/note-app.png';
 import quizApp from '../../assets/quiz-app.png';
@@ -18,7 +18,7 @@ const Projects = () => {
       <div className='carts'>
         <ScrollAnimation animateIn='animate__zoomInLeft'>
           <figure className='cart'>
-            <img src={quizApp} alt={quizApp} />
+            <img loading='lazy' src={quizApp} alt={quizApp} />
             <figcaption>
               <ScrollAnimation animateIn='animate__shakeY'>
                 <h3>Quiz App</h3>
@@ -43,7 +43,7 @@ const Projects = () => {
         </ScrollAnimation>
         <ScrollAnimation animateIn='animate__zoomIn'>
           <figure className='cart'>
-            <img src={filterProducts} alt={filterProducts} />
+            <img loading='lazy' src={filterProducts} alt={filterProducts} />
             <figcaption>
               <ScrollAnimation animateIn='animate__fadeOut'>
                 <h3>Filter Products</h3>
@@ -69,7 +69,7 @@ const Projects = () => {
 
         <ScrollAnimation animateIn='animate__zoomInRight'>
           <figure className='cart'>
-            <img src={noteApp} alt={noteApp} />
+            <img loading={lazy} src={noteApp} alt={noteApp} />
             <figcaption>
               <ScrollAnimation animateIn='animate__fadeOutUp'>
                 <h3>Note App</h3>

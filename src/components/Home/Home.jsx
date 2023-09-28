@@ -20,7 +20,7 @@ const Home = () => {
     <div id='home' className='home-page'>
       <ScrollAnimation animateIn='animate__fadeInLeft'>
         <div className='left-side'>
-          <img src={mehrvarProfilePic} alt={mehrvarProfilePic} />
+          <img loading='lazy' src={mehrvarProfilePic} alt={mehrvarProfilePic} />
         </div>
       </ScrollAnimation>
 

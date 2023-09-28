@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useState, lazy } from 'react';
 import './Certificates.css';
 import freeCodeCampWebDesignCertificate from '../../assets/freecodecamp-web-design-certificate.png';
 import jsSololearnCertificate from '../../assets/JSBySololearn.png';
@@ -46,6 +46,7 @@ const Certificates = () => {
             )}
           />
           <img
+            loading='lazy'
             src={freeCodeCampWebDesignCertificate}
             alt={freeCodeCampWebDesignCertificate}
           />
@@ -65,6 +66,7 @@ const Certificates = () => {
             onClick={(evt) => handleOpenCertificate(evt.target.dataset.image)}
           >
             <img
+              loading='lazy'
               src={freeCodeCampWebDesignCertificate}
               alt={freeCodeCampWebDesignCertificate}
             />
@@ -75,21 +77,33 @@ const Certificates = () => {
             data-image='second'
             onClick={(evt) => handleOpenCertificate(evt.target.dataset.image)}
           >
-            <img src={jsSololearnCertificate} alt={jsSololearnCertificate} />
+            <img
+              loading='lazy'
+              src={jsSololearnCertificate}
+              alt={jsSololearnCertificate}
+            />
           </div>
           <div
             className='cursa-certificate certificate'
             data-image='third'
             onClick={(evt) => handleOpenCertificate(evt.target.dataset.image)}
           >
-            <img src={certificateFromCursa} alt={certificateFromCursa} />
+            <img
+              loading='lazy'
+              src={certificateFromCursa}
+              alt={certificateFromCursa}
+            />
           </div>
           <div
             className='wayup-certificate certificate'
             data-image='fourth'
             onClick={(evt) => handleOpenCertificate(evt.target.dataset.image)}
           >
-            <img src={certificateFromWayUp} alt={certificateFromWayUp} />
+            <img
+              loading='lazy'
+              src={certificateFromWayUp}
+              alt={certificateFromWayUp}
+            />
           </div>
         </div>
       </ScrollAnimation>

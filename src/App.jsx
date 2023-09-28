@@ -1,19 +1,16 @@
-import { React, useLayoutEffect, useState } from 'react';
+import { React, lazy, Suspense } from 'react';
 import './App.css';
-import MainContent from './components/MainContent/MainContent';
-import Preloader from './components/Preloader/Preloader';
+const MainContent = lazy(() => import('./components/MainContent/MainContent'));
+const Preloader = lazy(() => import('./components/Preloader/Preloader'));
 
 const App = () => {
-  const [loader, setLoader] = useState(true);
-
-  useLayoutEffect(() => {
-    setTimeout(() => {
-      setLoader(false);
-    }, 2000);
-  }, []);
-
   return (
-    <div className='container'>{loader ? <Preloader /> : <MainContent />}</div>
+    // <div className='container'>{loader ? <Preloader /> : <MainContent />}</div>
+    <div className='container'>
+      <Suspense fallback={<Preloader />}>
+        <MainContent />
+      </Suspense>
+    </div>
   );
 };
 

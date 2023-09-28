@@ -5,6 +5,5 @@
   inset: 0;
   display: grid;
   place-items: center;
-  background: rgba(0, 26, 28, 0.9);
-  /* background: red; */
+  background: rgba(0, 26, 28, 0.5);
 }

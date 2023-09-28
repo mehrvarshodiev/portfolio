@@ -1,14 +1,16 @@
-import { React, useRef, useState } from 'react';
+import { React, useRef, useState, lazy, Suspense } from 'react';
 import { Link, animateScroll as scroll, scroller } from 'react-scroll';
 import './MainContent.css';
-import Home from '../Home/Home';
-import About from '../About/About';
-import Projects from '../Projects/Projects';
-import Certificates from '../Certificates/Certificates';
-import Contacts from '../Contacts/Contacts';
+const Home = lazy(() => import('../Home/Home'));
+const About = lazy(() => import('../About/About'));
+const Certificates = lazy(() => import('../Certificates/Certificates'));
+const Projects = lazy(() => import('../Projects/Projects'));
+const Contacts = lazy(() => import('../Contacts/Contacts'));
+
 import { FaHome, FaUser, FaBriefcase, FaAward } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faM } from '@fortawesome/free-solid-svg-icons';
+import Preloader from '../Preloader/Preloader';
 
 const MainContent = () => {
   const [isBurgerBtnOpen, setIsBurgerBtnOpen] = useState(false);
