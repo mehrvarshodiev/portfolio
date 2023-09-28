@@ -1,4 +1,4 @@
-import { React, lazy } from 'react';
+import React from 'react';
 import './Projects.css';
 import noteApp from '../../assets/note-app.png';
 import quizApp from '../../assets/quiz-app.png';
@@ -69,7 +69,7 @@ const Projects = () => {
 
         <ScrollAnimation animateIn='animate__zoomInRight'>
           <figure className='cart'>
-            <img loading={lazy} src={noteApp} alt={noteApp} />
+            <img loading='lazy' src={noteApp} alt={noteApp} />
             <figcaption>
               <ScrollAnimation animateIn='animate__fadeOutUp'>
                 <h3>Note App</h3>

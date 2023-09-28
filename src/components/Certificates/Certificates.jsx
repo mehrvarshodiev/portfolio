@@ -1,4 +1,4 @@
-import { React, useState, lazy } from 'react';
+import { React, useState } from 'react';
 import './Certificates.css';
 import freeCodeCampWebDesignCertificate from '../../assets/freecodecamp-web-design-certificate.png';
 import jsSololearnCertificate from '../../assets/JSBySololearn.png';
