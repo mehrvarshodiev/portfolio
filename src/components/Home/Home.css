@@ -19,12 +19,15 @@
   justify-content: center;
   transition: all 0.3s ease-out;
   position: relative;
+  padding: 0.5rem;
 }
 
 .left-side img {
   width: 98%;
   height: 98%;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .left-side::before {
