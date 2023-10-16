@@ -218,6 +218,24 @@ input.has-error {
   font-weight: 700;
 }
 
+.footer-content .copy-right .share-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: #17b1b9;
+  opacity: 0.8;
+  transition: all 0.4s ease-in;
+}
+
+.footer-content .copy-right .share-btn:hover {
+  opacity: 1;
+  color: #fff;
+}
+.footer-content .copy-right .share-btn:active {
+  color: #1773ea;
+  transition: all 50ms ease-out;
+}
+
 @media screen and (max-width: 968px) {
   .form-content {
     width: 50%;

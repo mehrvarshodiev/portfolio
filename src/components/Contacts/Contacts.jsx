@@ -8,9 +8,17 @@ import {
   faWhatsapp,
   faTelegram,
 } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelope,
+  faPhone,
+  faShare,
+  faShareAlt,
+  faShareAltSquare,
+  faShareFromSquare,
+} from '@fortawesome/free-solid-svg-icons';
 import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { FaShareAlt } from 'react-icons/fa';
 
 const Contacts = () => {
   const [nameValue, setNameValue] = useState('');
@@ -111,6 +119,18 @@ const Contacts = () => {
     }
   };
 
+  const handleShare = (e) => {
+    e.preventDefault();
+    if (!navigator.share) return;
+    navigator
+      .share({
+        title: 'MEHRVAR SHODIEV',
+        text: 'Checkout my portfolio',
+        url: 'https://mehrvarshodiev.github.io/portfolio',
+      })
+      .catch((error) => console.log('Error sharing!', error));
+  };
+
   return (
     <div id='contact' className='contact-page'>
       <ScrollAnimation animateIn='animate__slideInUp'>
@@ -204,6 +224,9 @@ const Contacts = () => {
         <p className='hours'>{hours}</p>
         <p className='copy-right'>
           Mehrvar &copy; {new Date().getFullYear()}. All Rights Reserved.
+          <span className='share-btn' onClick={handleShare}>
+            <FontAwesomeIcon icon={faShareFromSquare} />
+          </span>
         </p>
       </div>
     </div>

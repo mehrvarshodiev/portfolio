@@ -27,6 +27,7 @@ const MainContent = () => {
     const horizontalScrollLine = document.querySelector('.horizontal_scroll');
     horizontalScrollLine.style.width = `${scrolled}%`;
 
+    // Sticky Header Navbar
     const header = document.querySelector('.header');
     const arrowDown = document.querySelector('.arrow-down');
 

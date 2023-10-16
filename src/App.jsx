@@ -5,7 +5,6 @@ const Preloader = lazy(() => import('./components/Preloader/Preloader'));
 
 const App = () => {
   return (
-    // <div className='container'>{loader ? <Preloader /> : <MainContent />}</div>
     <div className='container'>
       <Suspense fallback={<Preloader />}>
         <MainContent />
