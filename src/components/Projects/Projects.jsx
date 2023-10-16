@@ -57,7 +57,7 @@ const Projects = () => {
                 Github
               </a>
               <a
-                href='https://country-info.netlify.app'
+                href='https://country-info-app.netlify.app'
                 className='live-demo'
                 target='_blank'
               >
