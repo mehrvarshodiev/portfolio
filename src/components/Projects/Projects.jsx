@@ -46,7 +46,7 @@ const Projects = () => {
             <img loading='lazy' src={countryGuideApp} alt={countryGuideApp} />
             <figcaption>
               <ScrollAnimation animateIn='animate__fadeOut'>
-                <h3>Country Info</h3>
+                <h3>Country Info App</h3>
               </ScrollAnimation>
               <a
                 className='github-code'
