@@ -2,7 +2,7 @@ import React from 'react';
 import './Projects.css';
 import noteApp from '../../assets/note-app.png';
 import quizApp from '../../assets/quiz-app.png';
-import filterProducts from '../../assets/filter-products.png';
+import countryGuideApp from '../../assets/country-guide-app.png';
 import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -43,21 +43,21 @@ const Projects = () => {
         </ScrollAnimation>
         <ScrollAnimation animateIn='animate__zoomIn'>
           <figure className='cart'>
-            <img loading='lazy' src={filterProducts} alt={filterProducts} />
+            <img loading='lazy' src={countryGuideApp} alt={countryGuideApp} />
             <figcaption>
               <ScrollAnimation animateIn='animate__fadeOut'>
-                <h3>Filter Products</h3>
+                <h3>Country Info</h3>
               </ScrollAnimation>
               <a
                 className='github-code'
-                href='https://github.com/mehrvarshodiev/filter-products-sample/'
+                href='https://github.com/mehrvarshodiev/country-guide-app'
                 target='_blank'
                 title='github code'
               >
                 Github
               </a>
               <a
-                href='https://mehrvarshodiev.github.io/filter-products-sample/'
+                href='https://country-info.netlify.app'
                 className='live-demo'
                 target='_blank'
               >
