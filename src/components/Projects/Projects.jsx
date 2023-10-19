@@ -46,7 +46,7 @@ const Projects = () => {
             <img loading='lazy' src={countryGuideApp} alt={countryGuideApp} />
             <figcaption>
               <ScrollAnimation animateIn='animate__fadeOut'>
-                <h3>Country Info App</h3>
+                <h3>Country Guide App</h3>
               </ScrollAnimation>
               <a
                 className='github-code'
@@ -57,7 +57,7 @@ const Projects = () => {
                 Github
               </a>
               <a
-                href='https://country-info-app.netlify.app'
+                href='https://mehrvarshodiev.github.io/country-guide-app/'
                 className='live-demo'
                 target='_blank'
               >
