@@ -8,17 +8,14 @@ import {
   faWhatsapp,
   faTelegram,
 } from '@fortawesome/free-brands-svg-icons';
+
 import {
   faEnvelope,
   faPhone,
-  faShare,
-  faShareAlt,
-  faShareAltSquare,
   faShareFromSquare,
 } from '@fortawesome/free-solid-svg-icons';
 import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { FaShareAlt } from 'react-icons/fa';
 
 const Contacts = () => {
   const [nameValue, setNameValue] = useState('');
@@ -142,7 +139,7 @@ const Contacts = () => {
       <div className='contact-content'>
         <ScrollAnimation animateIn='animate__fadeInLeft'>
           <div className='social-media'>
-            <a href='tel:+99211220032' target='_blank'>
+            <a href='tel:+992111220032' target='_blank'>
               <FontAwesomeIcon icon={faPhone} bounce className='phone-icon' />
               (992) 111-220-032
             </a>

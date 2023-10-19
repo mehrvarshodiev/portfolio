@@ -4,7 +4,6 @@ import {
   FaGithub,
   FaDownload,
   FaLinkedin,
-  FaUser,
   FaPhoneSquareAlt,
   FaArrowDown,
   FaArrowCircleUp,
@@ -73,7 +72,7 @@ const Home = () => {
                 <FaGithub />
               </a>
               <a
-                href='#'
+                href='https://www.linkedin.com/in/mehrvarshodiev/'
                 target='_blank'
                 className='linkedin-link'
                 title='linkedin'
