@@ -1,0 +1,83 @@
+{
+  "header": {
+    "t1": "home",
+    "t2": "about",
+    "t3": "certificates",
+    "t4": "projects",
+    "t5": "contacts"
+  },
+  "home": {
+    "t1": "Hello I'm",
+    "t2": "Mehrvar Shodiev",
+    "t3": "Frontend Developer",
+    "t4": "download CV",
+    "t5": "contact info"
+  },
+  "about": {
+    "t1": "get to know more",
+    "t2": "about me",
+    "s1": {
+      "t1": "info",
+      "t2": "My name is Mehrvar. I am a “frontend developer” from Tajikistan. I have learned various technologies in the field of web development. I'm passionate about building intuitive and beautiful web interfaces. I'm a continuous learner, always exploring new technologies and best practices. I'm now looking for opportunities to contribute to innovative projects and collaborate with talented teams."
+    },
+    "s2": {
+      "t1": "skills"
+    },
+    "s3": {
+      "t1": "education",
+      "t2": "Bachelor of Science (B.S.) in Computer Science",
+      "t3": "Tajik Technical University (TTU) named after academician M. Osimi",
+      "t4": "Expected Graduation Date: May 2024",
+      "t5": "Dushanbe, Tajikistan"
+    }
+  },
+  "certificates": {
+    "t1": "you can see my",
+    "t2": "certificates"
+  },
+  "projects": {
+    "t1": "browse some of my",
+    "t2": "pet projects",
+    "t3": "github",
+    "t4": "live demo",
+    "first-project": {
+      "t1": "quiz app"
+    },
+    "second-project": {
+      "t1": "Country Guide App"
+    },
+    "third-project": {
+      "t1": "note app"
+    }
+  },
+  "contacts": {
+    "t1": "get in touch",
+    "t2": "contact me",
+    "social-medias": {
+      "t1": "email",
+      "t2": "facebook",
+      "t3": "instagram",
+      "t4": "whatsapp",
+      "t5": "telegram"
+    },
+    "form": {
+      "t1": "Your name",
+      "t2": "Your email",
+      "t3": "Your message",
+      "t4": "send data"
+    },
+    "validation": {
+      "t1": "Please fill out all required fields!",
+      "t2": "Please fill out name field!",
+      "t3": "Please fill out email field!",
+      "t4": "Please fill out message field!",
+      "t5": "Sending...",
+      "t6": "Data sent successfully!",
+      "t7": "Please check your internet connection!"
+    }
+  },
+  "footer": {
+    "t1": "Mehrvar",
+    "t2": "all right reserved"
+  }
+}
