@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font: 300 11px/1.4 Arial, Helvetica, sans-serif;
+  color: #242424;
+}
