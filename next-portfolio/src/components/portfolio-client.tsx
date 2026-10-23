@@ -8,10 +8,8 @@ import {
 } from "framer-motion";
 import {
   ArrowDown,
-  ArrowRight,
   ArrowUpRight,
   Braces,
-  Check,
   Code2,
   Github,
   Layers3,
